@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/brush"
+        android:checkable="true"
+        android:icon="@drawable/ic_brush"
+        android:title="pen"
+        app:showAsAction="always" >
+        <menu>
+            <group
+                android:id="@+id/g1"
+                android:enabled="true"
+                android:visible="true">
+                <RadioButton
+                    android:id="@+id/pen"
+                    android:button="@android:color/transparent"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_pen"
+                    android:title="Draw"
+                    android:visible="true" />
+                <RadioButton
+                    android:id="@+id/eraser"
+                    android:button="@android:color/transparent"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_eraser"
+                    android:title="Erase"
+                    android:visible="true" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/color"
+        android:icon="@drawable/ic_color"
+        android:title="Color"
+        app:showAsAction="always" >
+
+        <menu>
+            <group
+                android:id="@+id/g2"
+                android:enabled="true"
+                android:visible="true">
+                <item
+                    android:id="@+id/magenta"
+                    android:button="@android:color/transparent"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_magenta"
+                    android:title="Magenta"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/green"
+                    android:button="@android:color/transparent"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_green"
+                    android:title="Green"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/red"
+                    android:button="@android:color/transparent"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_red"
+                    android:title="Red"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/blue"
+                    android:button="@android:color/transparent"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_blue"
+                    android:title="Blue"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/black"
+                    android:button="@android:color/transparent"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_black"
+                    android:title="Black"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/yellow"
+                    android:button="@android:color/transparent"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:icon="@drawable/ic_yellow"
+                    android:title="Yellow"
+                    android:visible="true" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/size"
+        android:icon="@drawable/ic_size"
+        android:title="Size"
+        app:showAsAction="always">
+        <menu>
+            <group android:id="@+id/g3">
+                <item
+                    android:id="@+id/pt10"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:title="10 pt"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/pt25"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:title="25 pt"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/pt50"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:title="50 pt"
+                    android:visible="true" />
+                <item
+                    android:id="@+id/pt100"
+                    android:checkable="true"
+                    android:enabled="true"
+                    android:title="100 pt"
+                    android:visible="true" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/clear"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/ic_clear"
+        android:title="Clear all"
+        app:showAsAction="always" />
+</menu>
